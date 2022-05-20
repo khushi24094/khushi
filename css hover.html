@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Hover Element - selecto oR child combinator</title>
+        
+        <style type="text/css">
+            *{font-size:30px}                  
+                #MainUL li ul li{display:none;}
+                #MainUL li:hover ul li{display:block;}
+                #MainUL li:hover ul li ul li{display:none;}
+                #MainUL li ul li:hover ul li{display:block;}
+                #MainUL li ul li:hover ul li ul li{display:none;}
+                #MainUL li ul li ul li:hover ul li{display:block;}
+        </style>
+    </head>
+    <body>
+        <ul id="MainUL">
+                <li>Google
+                     <ul>
+                         <li>Gmail
+                               <ul>        
+                                        <li>sing up</li>         
+                                        <li>sign In            
+                                                <ul>
+                                                    <li>sign In as Admin</li>       
+                                                    <li>sign In as Member</li>
+                                                </ul>
+                                        </li>
+                                </ul>
+                        </li>
+
+                        <li>Youtube</li>
+                        <li>GDrive</li>
+                        <li>GMap</li>
+                    </ul>
+                </li>
+            <li>Facebook</li>
+            <li>Microsoft
+                     <ul>
+                         <li>Bing</li>
+                        <li>Linked In</li>
+                    </ul>
+            </li>
+            </li>MSN</li>
+            <li>Amazon
+                    <ul>
+                        <li>AWS</li>
+                        <li>ECOmmerce</li>
+                        <li>A-ML</li>
+                    </ul>
+            </li>
+        </ul>
+    </body>
+</html>
